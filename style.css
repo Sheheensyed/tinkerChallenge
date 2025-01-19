@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Scroll */
+
+#name:hover {
+    cursor: pointer;
+    /* font-family:'Courier New', Courier, monospace; */
+    animation: nameChange 1s infinite;
+}
+
+@keyframes nameChange {
+    50% {
+        color: beige;
+    }
+
+    50% {
+        color: brown;
+    }
+}
+
+#frontPage {
+    /* background: #000; */
+    background-color: azure;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#about {
+    padding: 1%;
+}
+
+#aboutMe {
+    width: 97%;
+}
+
+#AboutImg {
+    height: 300px;
+    /* margin-top: -50px; */
+    margin: -50px 60px 0px 0px;
+
+}
+
+#aboutContent {
+    display: flex;
+    margin: 10px 20px;
+}
+
+
+.skills {
+    height: 70vh;
+    padding-top: 15px;
+    background-color: azure;
+
+}
+
+.skillContent {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 40px;
+    margin-top: 15%;
+    /* border: 2px solid black; */
+}
+
+.skillPerc {
+    margin-left: 200px;
+}
+
+.skillTypes {
+    padding: 50px;
+    /* grid-template-columns: 4; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#skillImg {
+    border-radius: 10%;
+    margin: 0px 100px;
+}
+
+.project {
+    margin-top: 20px;
+}
+
+.projectType {
+    padding: 20px;
+    margin: 30px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: rgb(223, 250, 250); */
+}
+
+
+.projectCard {
+    width: 350px;
+
+}
+
+.projectCard :hover {
+    cursor: pointer;
+    width: 350px;
+    margin-top: 10px;
+    /* transition-duration: 0.5s; */
+    animation: shake 2.5s infinite;
+}
+
+@keyframes shake {
+    10% {
+        width: 380px;
+
+    }
+
+    20% {
+        width: 380px;
+
+    }
+
+    30% {
+        width: 380px;
+
+
+    }
+
+    40% {
+        width: 380px;
+
+
+    }
+}
+
+.projectImg {
+    width: 100%;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.CardTitle {
+    text-align: center;
+    margin-top: 10px;
+    font-size: large;
+}
